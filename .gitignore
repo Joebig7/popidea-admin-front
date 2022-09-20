@@ -56,4 +56,6 @@ gulpfile.tmp.*
 # HTML files
 /html-starter
 /html-demo
-/html-starter-demo
+/html-starter-dem
+
+.history
