@@ -205,36 +205,17 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
     <script>
-         $("#signinButton").click(function (e) {   
-          // 非常重要，阻止表单的默认提交行为
-          e.preventDefault();
-            var email = $("#email").val();
-            var password = $("#password").val();  
-  
-         axios.get('http://localhost:8880/popidea/v1/users/auth?username='+email+'&password='+password,
-             { method: 'GET',
-              mode: 'no-cors',
-              headers: {
-                'Access-Control-Allow-Origin': '*',
-                'Content-Type': 'application/json',
-              }, 
-              withCredentials: true,
-              credentials: 'same-origin'})
-              .then(function (response) {
-                
-                // handle success
-                console.log(response);
-                debug
-                alert(JSON.stringify(response));
-              })
-              .catch(function (error) {
-                // handle error
-                console.log(error);
-              })
-              .then(function () {
-                $(window).attr('location','index.html');
-              });
-       })
+
+          
+            var button  = document.getElementById("signinButton");
+
+             
+           
+
+
+        
+          
+      
             
     </script>
   </body>

@@ -205,9 +205,7 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
     <script>
-         $("#signinButton").click(function (e) {   
-          // 非常重要，阻止表单的默认提交行为
-          e.preventDefault();
+         $("#signinButton").click(function () {   
             var email = $("#email").val();
             var password = $("#password").val();  
   
@@ -232,7 +230,7 @@
                 console.log(error);
               })
               .then(function () {
-                $(window).attr('location','index.html');
+                alert(JSON.stringify(response));
               });
        })
             
